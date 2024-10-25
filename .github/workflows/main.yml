@@ -24,13 +24,14 @@ jobs:
 
       # Step 3: Authenticate to Google Cloud using Workload Identity Federation
       - id: 'auth'
-        name: 'Obtain access token by using Workload Identity Federation'
-        uses: 'google-github-actions/auth@v2'
+        name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
         with:
           create_credentials_file: true
           token_format: access_token
-          workload_identity_provider: "projects/${{ secrets.GCP_PROJECT_NUMBER }}/locations/global/workloadIdentityPools/new-github-actions/providers/github-actions"
-          service_account: "new-svc-acc-9@${{ secrets.GCP_PROJECT_ID }}.iam.gserviceaccount.com"
+          workload_identity_provider: projects/${{ secrets.GCP_PROJECT_NUMBER }}/locations/global/workloadIdentityPools/new-github-actions/providers/new-github-actions
+          service_account: new-svc-acc-9@hello-project-439605-s1.iam.gserviceaccount.com
+          export_environment_variables: true
 
       # Step 4: Configure Docker to use gcloud as a credential helper for Artifact Registry
       - name: Configure Docker for Artifact Registry

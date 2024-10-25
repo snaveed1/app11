@@ -61,7 +61,7 @@ jobs:
           git config user.email "shaikhnaved10346@gmail.com"
 
           # Step 7: Update values.yaml with the new image tag
-          yq e '.image.tag = "{{ github.sha }}"' -i app11/values.yaml
+          yq e '.image.tag = "${{ github.sha }}"' -i app11/values.yaml
 
           git add app11/values.yaml
           git commit -m "updating image tag"  

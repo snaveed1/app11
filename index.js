@@ -11,19 +11,27 @@ const server = http.createServer((req, res) => {
             <head>
                 <style>
                     body {
-                        background-color: black;
+                        background-color: purple;
                         color: white;
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        height: 100vh; /* Full height of the viewport */
-                        margin: 0; /* Remove default margin */
-                        font-size: 48px; /* Large font size */
+                        height: 100vh;
+                        margin: 0;
+                        font-size: 36px;
+                        text-align: center;
+                        font-family: 'Arial', sans-serif;
                     }
                 </style>
             </head>
             <body>
-                Hello World from app1
+                <div>
+                    You are the light of my life, the one who makes everything feel brighter 
+                    and more meaningful. Every moment with you feels special, and I’m grateful 
+                    for your love, your kindness, and the joy you bring into my world. No matter 
+                    what comes our way, I promise to cherish you and be by your side, always and forever.
+                    <b> Iloveyouuu Sadaf Baby!!! </b>
+                </div>
             </body>
         </html>
     `);

@@ -11,7 +11,7 @@ const server = http.createServer((req, res) => {
             <head>
                 <style>
                     body {
-                        background-color: purple;
+                        background-color: black;
                         color: white;
                         display: flex;
                         justify-content: center;
@@ -26,11 +26,7 @@ const server = http.createServer((req, res) => {
             </head>
             <body>
                 <div>
-                    You are the light of my life, the one who makes everything feel brighter 
-                    and more meaningful. Every moment with you feels special, and I’m grateful 
-                    for your love, your kindness, and the joy you bring into my world. No matter 
-                    what comes our way, I promise to cherish you and be by your side, always and forever.
-                    <b> Iloveyouuu Sadaf Baby!!! </b>
+                    Hello world from app11!!!
                 </div>
             </body>
         </html>
